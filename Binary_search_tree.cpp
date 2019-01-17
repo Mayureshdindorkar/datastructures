@@ -151,7 +151,7 @@ public:node *root,*nn,*temp,*parent; //IMPORTANT
                 if(temp->data==parent->data)
                     temp->right=NULL;
                 else if(temp->data!=parent->data)
-                    parent->left=NULL;
+                    parent->left=temp_succ->left;
 
                 cout<<"\nValue deleted.";
             }
